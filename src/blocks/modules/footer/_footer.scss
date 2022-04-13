@@ -1,0 +1,21 @@
+.footer {
+    padding: 40px 0;
+    background-image: url('../img/header_bg.png');
+}
+
+.footer__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer__item:not(:first-child) {
+    margin-top: 15px;
+}
+
+.footer__item_link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}

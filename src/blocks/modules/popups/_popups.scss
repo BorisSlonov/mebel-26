@@ -1,0 +1,77 @@
+#filter {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(204, 204, 204, 0.65);
+}
+
+.filter__title {
+  font-size: 24px;
+}
+
+.filter__body {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.filter__item {
+  padding: 15px 5px;
+  background-color: rgba(204, 204, 204, 0.785);
+  color: #333;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.filter__item:hover {
+  background-color: #ccc;
+}
+
+.filter__item:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
+
+#zamer {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(204, 204, 204, 0.65);
+}
+
+.zamer {
+}
+
+.zamer__title {
+  font-size: 24px;
+}
+
+.zamer__sub-title {
+  display: block;
+  margin-top: 15px;
+}
+
+.zamer-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.zamer-form__input {
+  padding: 15px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.zamer-form__input:not(:first-child) {
+  margin-top: 15px;
+}
+
+.zamer-form__btn {
+  margin-top: 15px;
+}

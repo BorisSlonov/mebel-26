@@ -1,5 +1,6 @@
 "use strict";
-import $ from "jquery";
+
+
 
 //burger
 window.addEventListener("DOMContentLoaded", () => {
@@ -27,15 +28,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(function () {
   $(".header__link_submenu_wrap").on("click", function () {
-    $(this).find(".submenu__arrow-wrap svg").css({ transform: "rotate(0deg)" });
+    $(".header__link_submenu_wrap").removeClass("active");
 
-    if ($(".submenu").is(":visible")) {
-      $(".submenu").hide("slow");
-      $(".submenu__arrow-wrap svg").css({ transform: " rotate(180deg)" });
-      console.log("click1");
+    $(this).toggleClass("active");
+
+    if ($(".active + .submenu").is(":visible")) {
+      $(".active + .submenu").hide("slow");
     } else {
-      $(".submenu").show("slow");
-      console.log("click2");
+      $(".submenu").hide("slow");
+      $(".active + .submenu").show("slow");
     }
   });
 });

@@ -1,72 +1,42 @@
 @import "modules/header/header";
 
+@import "modules/head/head";
+
+@import "modules/main-gallery/main-gallery";
+
+@import "modules/main-second/main-second";
+
 @import "modules/sliders/sliders";
 
 @import "modules/footer/footer.scss";
 
+@import "modules/popups/popups.scss";
 
-
-
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
-
-    &_1 {
-        display: none;
-
-    }
-
-    &_main {
-        position: relative;
-        font-size: 20px;
-        font-weight: 500;
-        color: #fff;
-        padding: 1rem 2.6rem;
-        border: 2px solid #fff;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        transition: all .3s;
-        min-width: 300px;
-        text-align: center;
-        animation-play-state: paused;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: -30px;
-            width: 55px;
-            height: 20px;
-            background-image: url(../img/svg/btn-arrow.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            transition: all .3s;
-            animation-play-state: paused;
-        }
-
-        &:hover {
-            background-color: #fff;
-            color: #1B2546;
-          
-
-            &::after {
-                animation-play-state: running;
-                animation: spin 2s infinite ease;
-            }
-        }
-    }
+.main {
+  padding-top: 120px;
 }
 
+.btn {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: rgba(204, 204, 204, 0.777);
+  transition: all 0.3s;
+  border: none;
+}
 
-@keyframes spin {
+.btn:hover {
+  background-color: #ccc;
+}
 
-    0%,
-    100% {
-        transform: translate(0, -50%);
-    }
-
-    50% {
-        transform: translate(25px, -50%);
-    }
+@media (max-width: 425px) {
+  .btn {
+    padding: 10px 5px;
+    font-size: 18px;
+  }
 }
